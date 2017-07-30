@@ -1,0 +1,58 @@
+.header{
+    color: #fff;
+    .absolute;
+    top: 0px;
+    z-index: 10;
+    padding:10px 15px;
+    .fullw;
+    height: 55px;
+    .logo{  
+        .absolute;
+        top: 0px;
+        left: 0px;
+        img{
+            height: 30px;    
+        }
+        
+    }
+    .box-menu{
+        margin-left: 220px;
+        .relative;
+    }
+    .menus{
+        padding:10px 0px;
+        .url{
+            padding:10px 20px;
+            color: #fff;
+            .opacity(0.8);
+            &.active,&:hover{
+                .opacity(1);
+            }
+            &.active{
+                font-weight: 600;
+            }
+            &.-login{
+                .corner(3px);
+                background: #fe6a9c; /* For browsers that do not support gradients */
+                background: -webkit-linear-gradient(to right, #fe6a9c, #fe846d); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(to right, #fe6a9c, #fe846d); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(to right, #fe6a9c, #fe846d); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(to right, #fe6a9c, #fe846d); /* Standard syntax */
+                .opacity(1);
+                color: #fff;
+                transition:all 0.3s ease;
+                &:hover{
+                    background: -webkit-linear-gradient(to left, #fe6a9c, #fe846d); /* For Safari 5.1 to 6.0 */
+                    background: -o-linear-gradient(to left, #fe6a9c, #fe846d); /* For Opera 11.1 to 12.0 */
+                    background: -moz-linear-gradient(to left, #fe6a9c, #fe846d); /* For Firefox 3.6 to 15 */
+                    background: linear-gradient(to left, #fe6a9c, #fe846d); /* Standard syntax */
+                }
+            }
+        } 
+        &.-right{
+            .absolute;
+            top: 0px;
+            right: 0px;
+        }
+    }
+}

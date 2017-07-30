@@ -1,0 +1,245 @@
+.section{
+    padding:80px 0px;
+    .relative;
+    .bg{
+        .absolute;
+        top: 0px;
+        left:0px;
+        right: 0px;
+        bottom: 0px;
+        -webkit-transform: skewy(-6deg);
+       -moz-transform: skewy(-6deg);
+        -ms-transform: skewy(-6deg);
+         -o-transform: skewy(-6deg);
+            transform: skewy(-6deg);
+        div{
+            .absolute;
+            top:0px;
+            left: 0px;
+        }
+    }
+    &.bg-gray{
+        background:@bg;
+    }
+}
+.section{
+    &.-press{
+        padding:20px 0px;
+        .center;
+        .list-press{
+            .inline;
+            .item{
+                padding:10px 20px;
+                .inline;
+                .opacity(0.46);
+                img{
+                    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                    filter: grayscale(100%);
+                    height: 25px;
+                }
+                &:hover{
+                    .opacity(1);
+                    img{
+                        -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+                        filter: grayscale(0);
+                    }   
+                }
+            }
+        }
+    }
+}
+
+.section.-features{
+    padding-top: 0px;
+    .row{
+        clear:both;
+    }
+    .item{
+        padding:15px;
+        .left;
+        .center;
+        width: 33.33%;
+        .icon{
+            .center;
+            img{
+                height: 120px;
+
+            }
+            margin-bottom: 10px;
+        }
+        .name{
+            .f20;
+            margin-bottom: 10px;
+            color: @title;
+            .thick;
+        }
+        .desc{
+            .c(@txt);
+            .f14;
+            line-height: 22px;
+        }
+    }
+}
+
+
+.section.-customers{
+    .bg{
+        background: #f3f8fc;
+        .xo;
+        z-index: 4;
+        div{
+            left: auto;
+            .corner(20px);
+            top: 0px;
+            right: -200px;
+            width: 400px;
+            z-index: 4;
+            height: 400px;
+            background: #f7fbfe;
+            transform:rotate(45deg);
+        }
+
+    }
+    .bottom{
+        height: 300px;
+        .absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background: #f3f8fc;
+        z-index: 2;
+    }
+    .container{
+        z-index: 10;
+    }
+    .item{
+        padding:0px 30px;
+        height: auto;
+
+
+    }
+    .customer-say{
+        .relative;
+        padding-left: 80px;
+        .avatar{
+            .absolute;
+            top: 0px;
+            left: 0px;
+            .corner(50%);
+            width: 60px;
+            height: 60px;
+            .xo;
+            border:2px solid #fff;
+            img{
+                width: 100%;
+            }
+        }
+        .txt{
+            .corner(3px);
+            color: @txt;
+            .italic;
+            line-height: 20px;
+        }
+        .username{
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+        .pos{
+            .f12;
+            color: @txt;
+        }
+    }
+    .slider-customers{
+        margin-top: 60px;
+        padding: 0px 20px;
+        img{
+            height: 30px;
+        }
+    }
+}
+.section.-register{
+    .center;
+    padding:20px;
+    background: #f1f8fe;
+    padding-bottom: 40px;
+    .register-box{
+        .block;
+        margin-top: 0px;
+        .text{
+            margin-bottom: 20px;
+
+            .block;
+        }
+    }
+}
+.key-mess{
+    .bg{
+        background: #f7fbfe;
+        .xo;
+        div{
+            width: 300px;
+            height: 300px;
+            .corner(20px);
+            left: -100px;
+            transform:rotate(45deg);
+            background: #fdfeff;
+
+        }
+    }
+    .mess{
+        width: 40%;
+        .left;
+        padding: 40px 0px;
+        .title{
+            .f20;
+            margin-bottom: 10px;
+            font-weight: 600;
+
+        }
+        .desc{
+            color:@txt;
+        }
+        .tabs{
+            margin-top: 20px;
+            max-width: 400px;
+        }
+        .tab{
+            color:#50555d;
+            .block;
+            .relative;
+            padding: 15px 10px;
+            padding-left: 40px;
+            font-weight: 600;
+            .corner(5px);
+            .icon{
+                .absolute;
+                top: 15px;
+                left: 10px;
+                .f16;
+                color: @three;
+                width: 30px;
+
+            }
+            &:hover{
+                color: @three;
+            }
+            &.active{
+                background: @three;
+                color: #fff;
+                box-shadow: 0px 3px 5px fade(@three,30);
+                .icon{
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+    .mess-img{
+        width: 55%;
+        .right;
+        img{
+            width: 100%;
+        }
+    }
+}

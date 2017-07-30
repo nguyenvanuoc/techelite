@@ -1,0 +1,52 @@
+.header{
+    color: #fff;
+    .absolute;
+    top: 0px;
+    z-index: 10;
+    padding:10px 15px;
+    .fullw;
+    height: 55px;
+    .logo{  
+        .absolute;
+        top: 0px;
+        left: 0px;
+        img{
+            height: 30px;    
+        }
+        
+    }
+    .box-menu{
+        margin-left: 220px;
+        .relative;
+    }
+    .menus{
+        padding:10px 0px;
+        .url{
+            padding:10px 20px;
+            color: #fff;
+            .opacity(0.8);
+            &.active,&:hover{
+                .opacity(1);
+            }
+            &.active{
+                font-weight: 600;
+            }
+            &.-login{
+                .corner(3px);
+                .rgba(#fff,0.13);
+                .opacity(1);
+                color: #fff;
+                transition:all 0.3s ease;
+                &:hover{
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+                    transition:all 0.3s ease;
+                }
+            }
+        } 
+        &.-right{
+            .absolute;
+            top: 0px;
+            right: 0px;
+        }
+    }
+}

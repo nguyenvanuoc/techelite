@@ -1,0 +1,85 @@
+.hero-banner{
+    .relative;
+    .xo;
+    .hero-bg{
+        .absolute;
+        .full;
+        .xo;
+        z-index: 1;
+        background-color: @main;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#312dc2), to(#2371ef)); /* Saf4+, Chrome */
+        background-image: -webkit-linear-gradient(top, #312dc2, #2371ef); /* Chrome 10+, Saf5.1+, iOS 5+ */
+        background-image:    -moz-linear-gradient(top, #312dc2, #2371ef); /* FF3.6+ */
+        background-image:     -ms-linear-gradient(top, #312dc2, #2371ef); /* IE10 */
+        background-image:      -o-linear-gradient(top, #312dc2, #2371ef); /* Opera 11.10+ */
+        background-image:     linear-gradient(to bottom right,#312dc2 0,#2371ef 100%);
+        filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#312dc2', endColorstr='#2371ef'); /* IE6 & IE7 */
+    }
+    .hero-cover{
+        .absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+        top: 0px;
+        margin:auto;
+        img{
+            .fullw;
+        }
+    }
+    .hero-content{
+        .relative;
+        padding:120px 0px;
+        z-index: 10;
+        margin:0px auto;
+    }
+    .hero-text{
+        color:#fff;
+        width: 40%;
+        .left;
+        padding-top: 40px;
+        .title{
+            .f32;
+            .bold;
+            .block;
+            margin-bottom: 15px;
+        }
+        .desc{
+            .block;
+            .f18;
+            color: #fff;
+            line-height: 26px;
+            margin-bottom: 30px;
+
+        }
+        .cta{
+            .inline;
+            padding:15px 20px;
+            border:1px solid fade(#fff,10);
+            color: #fff;
+            .corner(3px);
+            .f16;
+            .center;
+            width: 200px;
+            margin:0px 5px;
+            .bold;
+            .pointer;
+            &:hover{
+                .rgba(#fff,0.4);
+            }
+            &.-register{
+                background: @btn;
+                &:hover{
+                    background: darken(@btn,10);
+                }
+            }
+        }
+    }
+    .screen{
+        width: 55%;
+        .right;
+        img{
+            max-width: 100%;
+        }
+    }
+}
