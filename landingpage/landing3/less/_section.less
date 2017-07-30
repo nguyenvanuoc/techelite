@@ -1,218 +1,294 @@
-.section{
-    padding:80px 0px;
+.section {
+    padding: 80px 0px;
     .relative;
-    .bg{
+    .bg {
         .absolute;
         top: 0px;
-        left:0px;
+        left: 0px;
+        .xo;
         right: 0px;
         bottom: 0px;
-        img{
+        img {
             .fullw;
         }
     }
-    &.bg-gray{
-        background:@bg;
+    &.bg-gray {
+        background: @bg;
     }
 }
-.col50{
+
+.col50 {
     width: 50%;
     .left;
 }
-.section.-steps{
-    margin:0px auto;
+
+.section.-steps {
+    margin: 0px auto;
     .relative;
     z-index: 2;
     background-position: center;
     background-size: cover;
-   
-    .sketch{
+    padding-bottom: 0px;
+
+    .sketch {
         max-width: 768px;
-        margin:0px auto;
+        margin: 0px auto;
         margin-top: -362px;
     }
-    img{
+    img {
         width: 100%;
     }
-    .step{
+    .step {
         margin-top: 40px;
-        .bg{
+        .bg {
             background: #f7fbfe;
             .xo;
         }
-        .step-content{
+        .step-content {
             width: 45%;
             .left;
             padding: 40px 0px;
-            .title{
+            .title {
                 .f20;
                 margin-bottom: 10px;
-                font-weight: 600;
-
+                .thick;
+                color: @title;
             }
-            .desc{
-                color:@txt;
+            .desc {
+                color: @txt;
             }
-            .tabs{
+            .tabs {
                 margin-top: 20px;
                 max-width: 400px;
             }
-            .tab{
-                color:#50555d;
+            .tab {
+                color: #50555d;
                 .block;
                 .relative;
                 padding: 15px 10px;
                 padding-left: 40px;
                 font-weight: 600;
                 .corner(5px);
-                .icon{
+                .icon {
                     .absolute;
                     top: 15px;
                     left: 10px;
                     .f16;
                     color: @three;
                     width: 30px;
-
                 }
-                &:hover{
+                &:hover {
                     color: @three;
                 }
-                &.active{
+                &.active {
                     background: #01acfc;
-                    background: -webkit-linear-gradient(to right, #01acfc, #00cef3); /* For Safari 5.1 to 6.0 */
-                    background: -o-linear-gradient(to right, #01acfc, #00cef3); /* For Opera 11.1 to 12.0 */
-                    background: -moz-linear-gradient(to right, #01acfc, #00cef3); /* For Firefox 3.6 to 15 */
-                    background: linear-gradient(to right, #01acfc, #00cef3); /* Standard syntax */
+                    background: -webkit-linear-gradient(to right, #01acfc, #00cef3);
+                    /* For Safari 5.1 to 6.0 */
+                    background: -o-linear-gradient(to right, #01acfc, #00cef3);
+                    /* For Opera 11.1 to 12.0 */
+                    background: -moz-linear-gradient(to right, #01acfc, #00cef3);
+                    /* For Firefox 3.6 to 15 */
+                    background: linear-gradient(to right, #01acfc, #00cef3);
+                    /* Standard syntax */
                     color: #fff;
-                    box-shadow: 0px 3px 5px fade(@three,30);
-                    .icon{
+                    box-shadow: 0px 3px 5px fade(@three, 30);
+                    .icon {
                         color: #fff;
                     }
                 }
-
             }
         }
-        .step-img{
+        .step-img {
             width: 45%;
             .right;
-            img{
+            img {
                 width: 100%;
             }
         }
     }
-}
-
-.text-wrap{
-    padding: 20px;
-    .title{
-        .f18;
-        .bold;
-        margin-bottom: 10px;
-
-    }
-    .desc{
-        color: @txt;
-        line-height: 20px;
-
-    }
-    .btn-register.no1{
-        box-shadow: none;
-        border: 1px solid @borc;
-        background: none;
-        color: @three;
-        margin-top: 20px;
-        &:hover{
-            background: @three;
-            color: #fff;
-            border-color: @three;
+    .register-box {
+        background: #fff;
+        img {
+            max-width: 100%;
+            width: auto;
         }
     }
 }
-.image-screens{
-    padding: 20px;
-    img{
-        max-width: 100%;
-    }
-}
-.section.-features{
+.features-block {
     padding-top: 0px;
     .relative;
-    z-index:20;
+    z-index: 20;
     background: #fff;
-    padding: 20px;
-    max-width:1200px;
-    margin:0px auto;
-    box-shadow: 0px -5px 20px fade(#000,5);
-    .title-main{
-        margin-top: 60px;
+    padding: 120px 20px;
+    max-width: 1200px;
+    margin: 0px auto;
+    margin-top: 120px;
+    padding-bottom: 0px;
+    box-shadow: 0px -10px 15px fade(#000, 0.05);
+    .container {}
+    .row {
+        clear: both;
+    }
 
-    }
-    .container{
-        
-    }
-    .row{
-        clear:both;
-    }
-    .item{
-        padding:15px;
+    .item {
+        padding: 15px;
         .left;
         .center;
         width: 33.33%;
-        .icon{
+        .icon {
             .center;
-            img{
+            img {
                 height: 120px;
-
             }
             margin-bottom: 10px;
         }
-        .name{
+        .name {
             .f20;
             margin-bottom: 10px;
             color: @title;
             .thick;
         }
-        .desc{
+        .desc {
             .c(@txt);
             .f14;
             line-height: 22px;
         }
     }
 }
-.section.-join{
-
+.join-block{
+    background: #fff;
+    z-index:2;
+    .relative;
+    padding-top: 100px;
+    .register-box{
+        margin-bottom: 80px;
+    }
 }
-.section.-statistic{
-    .info-content{
-        .actions{
-            margin-top: 30px;
-
+.text-wrap {
+    padding: 20px;
+    .title {
+        .f18;
+        color: @title;
+        .bold;
+        margin-bottom: 10px;
+    }
+    .desc {
+        color: @txt;
+        line-height: 20px;
+    }
+    .btn-register.no1 {
+        box-shadow: none;
+        border: 1px solid @borc;
+        background: none;
+        color: @three;
+        margin-top: 20px;
+        &:hover {
+            background: @three;
+            color: #fff;
+            border-color: @three;
         }
-        .list{
+    }
+}
+
+.image-screens {
+    padding: 20px;
+    img {
+        max-width: 100%;
+    }
+}
+
+
+.section.-statistic {
+    .info-content {
+        .actions {
+            margin-top: 30px;
+        }
+        .list {
             margin-top: 20px;
-            .li{
+            .li {
                 .block;
                 padding: 5px 0px;
                 .thick;
             }
-            .icon{
+            .icon {
                 .f20;
                 margin-right: 7px;
                 color: @three;
-                text-shadow:0px 2px 5px fade(@three,30);
+                text-shadow: 0px 2px 5px fade(@three, 0.3);
             }
         }
     }
-    .statistic{
-    
+    .btn-readmore {
+        .bold;
+        color: #636caf;
+        &:hover {
+            .underline;
+        }
+    }
+    .list-statistic {
+        margin-top: 30px;
+        .row {
+            margin: 0px -15px;
+        }
+        .w {
+            margin-right: 0px;
+            .relative;
+            box-shadow: 0px 2px 10px fade(#000, 0.05);
+            background: #fff;
+            padding: 10px;
+            padding-left: 60px;
+            .number {
+                .bold;
+                .f16;
+                color: @title;
+                margin-bottom: 5px;
+            }
+            .txt {
+                .f11;
+            }
+            .icon {
+                .absolute;
+                top: 10px;
+                left: 10px;
+                .f18;
+                width: 40px;
+                height: 40px;
+                .corner(50%);
+                line-height: 40px;
+                .center;
+
+                &.color1 {
+                    background: #bbe9fd;
+                    color: #fff;
+                }
+                &.color2 {
+                    background: #d9fbdd;
+                    color: #21b476;
+                }
+                &.color3 {
+                    background: #fff6df;
+                    color: #e7bb3d;
+                }
+                &.color4 {
+                    background: #fee1f5;
+                    color: #f6a2ed;
+                }
+            }
+        }
+        .item {
+            width: 50%;
+            .left;
+            padding: 15px;
+        }
     }
 }
-.section.-customers{
-    .bg{
+
+.section.-customers {
+    .bg {
         background: #f3f8fc;
         .xo;
         z-index: 4;
-        div{
+        div {
             left: auto;
             .corner(20px);
             top: 0px;
@@ -221,11 +297,10 @@
             z-index: 4;
             height: 400px;
             background: #f7fbfe;
-            transform:rotate(45deg);
+            transform: rotate(45deg);
         }
-
     }
-    .bottom{
+    .bottom {
         height: 300px;
         .absolute;
         bottom: 0px;
@@ -234,19 +309,17 @@
         background: #f3f8fc;
         z-index: 2;
     }
-    .container{
+    .container {
         z-index: 10;
     }
-    .item{
-        padding:0px 30px;
+    .item {
+        padding: 0px 30px;
         height: auto;
-
-
     }
-    .customer-say{
+    .customer-say {
         .relative;
         padding-left: 80px;
-        .avatar{
+        .avatar {
             .absolute;
             top: 0px;
             left: 0px;
@@ -254,44 +327,45 @@
             width: 60px;
             height: 60px;
             .xo;
-            border:2px solid #fff;
-            img{
+            border: 2px solid #fff;
+            img {
                 width: 100%;
             }
         }
-        .txt{
+        .txt {
             .corner(3px);
             color: @txt;
             .italic;
             line-height: 20px;
         }
-        .username{
+        .username {
             font-weight: 600;
             margin-top: 10px;
             margin-bottom: 3px;
         }
-        .pos{
+        .pos {
             .f12;
             color: @txt;
         }
     }
-    .slider-customers{
+    .slider-customers {
         margin-top: 60px;
         padding: 0px 20px;
-        img{
+        img {
             height: 30px;
         }
     }
 }
-.section.-register{
+
+.section.-register {
     .center;
-    padding:20px;
+    padding: 20px;
     background: #f1f8fe;
     padding-bottom: 40px;
-    .register-box{
+    .register-box {
         .block;
         margin-top: 0px;
-        .text{
+        .text {
             margin-bottom: 20px;
 
             .block;
