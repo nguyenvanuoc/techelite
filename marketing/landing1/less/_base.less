@@ -76,8 +76,8 @@ td {
     text-rendering: geometricPrecision;
 }
 a{
-    font-size: 13px;
-    color: #6b6863;
+    font-size: 14px;
+    color: #333;
     &:hover{
         color:@main;
         text-decoration: none;    
@@ -85,7 +85,213 @@ a{
 }
 /* End Reset Css  */
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 13px;
-    color: #6b6863;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
 }
+
+.homepage-wrap{
+    height: 100%;
+    .relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.content-pl{
+    .absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    bottom: 0px;
+}
+.header{
+    .relative;
+    height: 55px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    .logo{
+        .inline;
+        .vcenter;
+        margin-right: 5px;
+        img{
+            height: 25px;
+
+        }
+    }
+    .name{
+        .inline;
+        .vcenter;
+        .f24;
+        .normal;
+
+    }
+}
+.box-form{
+    background: #fafafa;
+    padding: 40px 20px;
+    .absolute;
+    top: 55px;
+    bottom: 0px;
+    left: 0px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    right: 0px;
+    overflow: auto;
+    .title{
+        .f24;
+        margin-bottom: 10px;
+
+    }
+    .description{
+        .f15;
+        margin-bottom: 20px;
+
+    }
+    .innerform{
+        max-width: 330px;
+        margin:auto;
+
+
+    }
+    .input{
+        .relative;
+        .icon{
+            .absolute;
+            top: 0px;
+            left: 0px;
+            width: 30px;
+            .center;
+            bottom: 0px;
+            padding: 10px 0px;
+            color: #888;
+        }
+    }
+    .form-control{
+        padding: 7px 10px;
+        .corner(3px);
+        box-shadow: none;
+        padding-left: 30px;
+        height: auto;
+
+    }
+    .actions{
+        .tright;
+        margin-top: 15px;
+        .submit{
+            padding:7px 30px;
+            background: @main;
+            color: #fff;
+            .corner(3px);
+            height: auto;
+            .thick;
+            .upper;
+            .fullw;
+            .block;
+            border:1px solid darken(@main,10);
+            &:hover{
+                background: darken(@main,10);
+            }
+        }
+
+    }
+}
+.error{
+    color: @red;
+}
+.content-pr{
+    .absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    .bg{
+        .absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 10;
+        background: rgba(0,0,0,0.8);
+    }
+    .content{
+        max-width: 320px;
+        .relative;
+        margin:auto;
+        z-index: 11;
+        padding: 40px 20px;
+        
+        img{
+            max-width: 100%;
+        }
+        .title{
+            color: #fff;
+            .f24;
+            margin-bottom: 10px;
+
+        }
+        .description{
+            .f15;
+            color: #fff;
+        }
+    }
+    .steps{
+        margin-top: 20px;
+        .step{
+            margin: 10px 0px;
+            color: #fff;
+            .number{
+                width: 30px;
+                width: 30px;
+                display: inline-block;
+                .vcenter;
+                .center;
+                line-height: 26px;
+                .bor(2px solid #fff);
+                color: #fff;
+                .corner(50%);
+
+                margin-right: 5px;
+
+            }
+            &.active{
+                .number{
+                    background: #fff;
+                    color: #333;
+                    .bold;
+                }
+            }
+        }
+    }
+    .image{
+        margin-top: 20px;
+        .bor(2px solid #fff);
+        .corner(10px);
+        .xo;
+        img{
+            max-width: 100%;
+        }
+    }
+
+}
+
