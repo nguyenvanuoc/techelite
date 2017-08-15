@@ -101,5 +101,14 @@ var LP=new function __LP(){
             $(".common-overlay").toggleClass("show");
         }
     }
+
 };
 LP.init();
+
+$(".toggle .tab").click(function(){
+    $(".toggle .tab").removeClass("active");
+    var id=$(this).attr("data-href");
+    $(this).addClass("active");
+    $(".pricing-block .box").removeClass("active");
+    $(id).addClass("active");
+});
