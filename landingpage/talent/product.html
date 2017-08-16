@@ -22,7 +22,7 @@
 </head>
 </script>
 
-<body>
+<body data-spy="scroll" data-target=".product-nav" data-offset="50">
     <div class="common-overlay" onclick="LP.expandMenu('close',this);"></div>
     <!-- <div class="support-online">
         <div class="image">
@@ -69,18 +69,18 @@
     <div class="product-nav">
         <div class="container">
             <div class="list">
-                <div class="item" data-screen="0" onclick="LP.nav('#cat-0');">
+                <a class="item" href="#cat-0">
                     Quy trình tuyển dụng
-                </div>
-                <div class="item" data-screen="2" onclick="LP.nav('#cat-2');">
+                </a>
+                <a class="item"  href="#cat-2">
                     Talent Network
-                </div>
-                <div class="item" data-screen="5" onclick="LP.nav('#cat-3');">
+                </a>
+                <a class="item" href="#cat-3">
                     Liên lạc &amp; Phỏng vấn
-                </div>
-                <div class="item active" data-screen="4" onclick="LP.nav('#cat-5');">
+                </a>
+                <a class="item active" href="#cat-5">
                     Đánh giá &amp; Báo cáo
-                </div>
+                </a>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -410,6 +410,7 @@
     <div id="video-player"></div>
     <script type="text/javascript" src="vendor/js/jquery.2.1.1.min.js"></script>
     <script type="text/javascript" src="vendor/js/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script>
     $("#keymess-tabs .tab").click(function() {
